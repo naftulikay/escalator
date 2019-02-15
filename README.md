@@ -28,3 +28,6 @@ Licensed at your discretion under either:
 
  - [Apache Software License, Version 2.0](./LICENSE-APACHE)
  - [MIT License](./LICENSE-MIT)
+
+ [travis]: https://travis-ci.org/naftulikay/escalator
+ [travis.svg]: https://travis-ci.org/naftulikay/escalator.svg?branch=master
