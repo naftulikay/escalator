@@ -15,7 +15,7 @@ matrix:
     - rust: nightly
   fast_finish: true
 
-install: cargo build --release --verbose
+install: make release
 script: cargo test --verbose
 
 notifications:

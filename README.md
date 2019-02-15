@@ -16,11 +16,12 @@ to become real `root:root`, and then will execute the binary with the given argu
 Once all of these criteria are met, execute the binary as an unprivileged user like so:
 
 ```shell
-escalator /lib/systemd/systemd --system --unit=multi-user.target
+escalator /lib/systemd/systemd -- --system --unit=multi-user.target
 ```
 
 This will set the UID and GID to `0` and then replace itself with the first argument, called with the remaining
-arguments as program arguments.
+arguments as program arguments. Note the `--`, this serves as a delimiter between the target binary and the arguments
+to be passed to it.
 
 ## License
 
