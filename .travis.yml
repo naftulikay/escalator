@@ -10,11 +10,17 @@ rust:
 
 cache: cargo
 
+addons:
+  apt:
+    packages:
+      - musl-tools
+
 matrix:
   allow_failures:
     - rust: nightly
   fast_finish: true
 
+before_install: rustup target install x86_64-unknown-linux-musl
 install: make release
 script: cargo test --verbose
 
