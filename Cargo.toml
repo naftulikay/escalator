@@ -1,0 +1,16 @@
+[package]
+name = "escalator"
+version = "0.1.0"
+authors = ["Naftuli Kay <me@naftuli.wtf>"]
+edition = "2018"
+
+[[bin]]
+name = "escalator-completion"
+path = "src/bin/gen-completions.rs"
+
+[dependencies]
+log = "0.4.6"
+log4rs = "0.8.1"
+nix = "0.13.0"
+parking_lot = "0.7.1"
+structopt = "0.2.14"
