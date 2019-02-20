@@ -1,6 +1,6 @@
 [package]
 name = "escalator"
-version = "0.1.0"
+version = "1.0.1"
 authors = ["Naftuli Kay <me@naftuli.wtf>"]
 edition = "2018"
 
